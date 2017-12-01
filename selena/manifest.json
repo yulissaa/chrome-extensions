@@ -1,0 +1,14 @@
+{
+  "manifest_version": 2,
+  "name": "Selena",
+  "version": "1.0",
+  "description": "Replace all the images on a webpage with pictures of Selena!",
+  "content_scripts": 
+  [
+    {
+      "matches": ["*://*/*"],
+      "js": ["script.js"],
+      "run_at": "document_end"
+    }
+  ]
+}

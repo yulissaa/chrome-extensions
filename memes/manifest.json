@@ -1,0 +1,14 @@
+{
+  "manifest_version": 2,
+  "name": "Memes Memes Memes",
+  "version": "1.0",
+  "description": "Application that replaces all links with a link to a meme.",
+  "content_scripts": 
+  [
+    {
+      "matches": ["*://*/*"],
+      "js": ["script.js"],
+      "run_at": "document_end"
+    }
+  ]
+}
